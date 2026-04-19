@@ -20,6 +20,7 @@ def get_mnist_dataloader(
         batch_size=batch_size,
         shuffle=train,
         num_workers=num_workers,
+        persistent_workers=True,
         pin_memory=True,
         drop_last=True,
     )
